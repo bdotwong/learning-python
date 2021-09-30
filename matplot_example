@@ -1,0 +1,26 @@
+import re
+import matplotlib.pyplot as plt
+
+
+text = "R= 2342, G= 3423, B= 9999, R= 4342, G= 3423, B= 1000, R= 3432, G= 5435, B= 9999, R= 3342, G= 3423, B= 9999,"
+
+red = re.findall("R= (\d+)", text)
+green = re.findall("G= (\d+)", text)
+blue = re.findall("B= (\d+)", text)
+
+red_list = []
+green_list = []
+blue_list = []
+
+
+plt.plot(red)
+plt.plot(green)
+plt.plot(blue)
+plt.show()
+#print(red)
+#print(green)
+#print((blue))
+
+
+#print(f"Red is{red} Green is{ green} Blue is {blue}")
+
